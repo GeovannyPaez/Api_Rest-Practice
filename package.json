@@ -1,0 +1,15 @@
+{
+  "name": "practica_api_rest",
+  "version": "1.0.0",
+  "description": "Consumo de una Api con Java Script de Peliculas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Geovanny Paez",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css" />
+
+  <title>PlatziMovies</title>
+</head>
+<body>
+  <header id="header" class="header-container">
+    <span class="header-arrow inactive">&lt;</span>
+    <h1 class="header-title">PlatziMovies</h1>
+    <h1 class="header-title header-title--categoryView inactive">Tendencias</h1>
+
+    <form id="searchForm" class="header-searchForm">
+      <input type="text" placeholder="Vengadores" />
+      <button id="searchBtn">🔍</button>
+    </form>
+
+  </header>
+
+  <section id="trendingPreview" class="trendingPreview-container">
+    <div class="trendingPreview-header">
+      <h2 class="trendingPreview-title">Tendencias</h2>
+      <button class="trendingPreview-btn">Ver más</button>
+    </div>
+
+    <article class="trendingPreview-movieList">
+      <div class="movie-container--reload movie-container movie-container--reloadTrending"></div>
+      <div class="movie-container--reload movie-container movie-container--reloadTrending"></div>
+      <div class="movie-container--reload movie-container movie-container--reloadTrending"></div>
+    </article>
+  </section>
+
+  <section id="categoriesPreview" class="categoriesPreview-container">
+    <h2 class="categoriesPreview-title">Categorías</h2>
+
+    <article class="categoriesPreview-list">
+      <div class="category-container categories-list--reload"></div>
+      <div class="category-container categories-list--reload"></div>
+      <div class="category-container categories-list--reload"></div>
+      <div class="category-container categories-list--reload"></div>
+    </article>
+  </section>
+  <div class="container__arrowUp inactive__arrow">
+    <i class='bx bxs-chevrons-up' style='color:#3e0f64' ></i>
+  </div>
+
+  <section id="liked" class="liked__container">
+    <div class="liked__header">
+      <h2 class="liked__title">Peliculas Favoritas</h2>
+    </div>
+    <article class="liked__movieList">
+      <!-- <div class="movie-container">
+        <img src="https://image.tmdb.org/t/p/w300/zgH8Ej50n2cvJCMJrxd4twEwSqz.jpg" alt="nombre de la pelicula" class="movie-img">
+      </div> -->
+      
+    </article>
+
+  </section>
+  <section id="genericList" class="genericList-container inactive">
+    <div class="movie-container movie-container--reload reload-category">
+      
+    </div>
+    <div class="movie-container--reload movie-container reload-category">
+      
+    </div>
+    <div class="movie-container--reload movie-container reload-category">
+    </div>
+  </section>
+
+  <section id="movieDetail" class="movieDetail-container inactive">
+    <h1 class="movieDetail-title skeleton" ></h1>
+    <span class="movieDetail-score"></span>
+    <p class="movieDetail-description">
+      
+    </p>
+
+    <article class="categories-list">
+      <div class="category-container categories-list--reload">
+      </div>
+      <div class="category-container categories-list--reload">
+      </div>
+      <div class="category-container categories-list--reload"></div>
+      <div class="category-container categories-list--reload"></div>
+    </article>
+
+    <article class="relatedMovies-container">
+      <h2 class="relatedMovies-title">Películas similares</h2>
+
+      <div class="relatedMovies-scrollContainer">
+        <div class="movie-container--reload movie-container">
+          <img
+            
+            class="movie-img"
+            alt=""
+          />
+        </div>
+        <div class="movie-container--reload movie-container">
+          <img
+           
+            class="movie-img"
+            alt=""
+          />
+        </div>
+        <div class="movie-container--reload movie-container">
+          <img
+           
+            class="movie-img"
+            alt=""
+          />
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer>Hecho con amor en Platzi por @YuniorPaez_12</footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/src/secret.js"></script>
+  <script src="/src/nodes.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="/src/navigation.js"></script>
+</body>
+</html>
