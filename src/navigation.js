@@ -191,9 +191,3 @@ const addEjecuteEventScrollSearch= ()=> getMoviesSearchByPages(querrriiii);
 const addEjecuteEventScrollCategory=()=> getMoviesCategoryIdPages(ideee);
 
 
-//lenguage
-optionsLenguage.addEventListener('click', ()=>{
-    lang = optionsLenguage.value;
-    console.log(lang)
-    homePage();
-});
