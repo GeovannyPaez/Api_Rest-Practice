@@ -3,7 +3,6 @@
 
 (()=>{
     arrowUpScroll.addEventListener('click',(e)=>{
-        console.log(e)
         document.documentElement.scrollTop= 0;
         document.body.scrollTop= 0;
     
@@ -12,7 +11,7 @@
 })();
 let page= 2;
 let maxPage;
-// let lang = 'en';
+
 
 const URL_API = 'https://api.themoviedb.org/3/'
 const Url_Api_img= 'https://image.tmdb.org/t/p/w300'
