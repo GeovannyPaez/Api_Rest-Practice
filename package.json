@@ -1,15 +1,19 @@
 {
-  "name": "practica_api_rest",
+  "name": "api_rest-practice",
   "version": "1.0.0",
-  "description": "Consumo de una Api con Java Script de Peliculas",
+  "description": "''\u001b[D\u001b[D\u001b[C\u001b[D\u001b[CMovies Details'",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeovannyPaez/Api_Rest-Practice.git"
+  },
   "author": "Geovanny Paez",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^0.27.2"
-  }
+  "bugs": {
+    "url": "https://github.com/GeovannyPaez/Api_Rest-Practice/issues"
+  },
+  "homepage": "https://github.com/GeovannyPaez/Api_Rest-Practice#readme"
 }
