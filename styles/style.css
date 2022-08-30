@@ -349,7 +349,7 @@ button {
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
-    transition: transform .4  s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 .container__arrowUp:hover{
   transform: scale(1.1);

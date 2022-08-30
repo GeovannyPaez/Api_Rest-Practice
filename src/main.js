@@ -1,16 +1,10 @@
 // import axios from "axios";
 //  import { axios } from "axios"
 
-(()=>{
-    arrowUpScroll.addEventListener('click',(e)=>{
-        document.documentElement.scrollTop= 0;
-        document.body.scrollTop= 0;
-    
-        arrowUpScroll.classList.remove('inactive__arrow');
-    },false);
-})();
+
 let page= 2;
 let maxPage;
+
 
 
 const URL_API = 'https://api.themoviedb.org/3/'
@@ -411,16 +405,15 @@ const viewMoviesLiked=()=>{
 }
 
 
+// arrouwUp Event
 
+    const scrollUp=()=>{
+        let currentScroll= document.documentElement.scrollTop;
+        if(currentScroll>0){
+            window.requestAnimationFrame(scrollUp);
+            window.scrollTo(0,currentScroll-(currentScroll/10));
 
-
-
-// const closure= (num)=>{
-//     return ()=>{
-//         console.log(num);
-//     }
-// }
-
-// const printNum = closure(50);
-
-// printNum();
+            arrowUpScroll.classList.add('inactive__arrow');
+        }
+    }
+    arrowUpScroll.addEventListener('click',scrollUp);
